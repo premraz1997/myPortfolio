@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prem Kumar Yadav's Portfolio</title>
+    <style>
+        /* Reset some default browser styles */
+        body, h1, h2, p, ul, li, img {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            border: 0;
+        }
+
+        /* General styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f4f4f9;
+            color: #333;
+        }
+
+        a {
+            text-decoration: none;
+            color: #007acc;
+        }
+
+        header {
+            background: #007acc;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header nav ul {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        header nav ul li {
+            display: inline;
+        }
+
+        header nav ul li a {
+            color: white;
+            font-weight: bold;
+        }
+
+        .profile-container {
+            text-align: center;
+            padding: 40px 20px;
+            background: white;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .profile-container img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        .profile-container h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .profile-container p {
+            font-size: 1.2em;
+            color: #666;
+        }
+
+        section {
+            padding: 40px 20px;
+        }
+
+        section h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2em;
+            color: #333;
+        }
+
+        section .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 40px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        form label {
+            margin: 10px 0 5px;
+        }
+
+        form input, form textarea {
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        form button {
+            padding: 10px 20px;
+            background: #007acc;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        form button:hover {
+            background: #005f99;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            header nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .container {
+                padding: 20px;
+            }
+
+            section h2 {
+                font-size: 1.5em;
+            }
+        }
+
+        /* Animation keyframes */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translate3d(0, 100%, 0);
+            }
+            to {
+                opacity: 1;
+                transform: translate3d(0, 0, 0);
+            }
+        }
+
+        .fadeInUp {
+            animation: fadeInUp 0.5s ease forwards;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Hire Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="profile-container fadeInUp">
+        <img src="pic.jpg" alt="Profile Picture" class="profile-pic"><!-- Add your profile picture here -->
+        <h1>Prem Kumar Yadav</h1>
+        <p>B.Tech. | SSUTMS , MP | Third Year, Mining Engineering</p>
+    </div>
+
+    <section id="education">
+        <div class="container fadeInUp">
+            <h2>Education</h2>
+            <ul>
+                <li><strong>B.Tech., Mining Engg.</strong> SSUTMS, MP (2023‐2026)</li>
+                <li><strong>Diploma</strong> Kalinga Institute of Engg.&Tech., Jajpur (2020) - Percentage: 87%</li>
+                <li><strong>Intermediate</strong> Gomia Inter College, Bokaro (2017) - Percentage: 60%</li>
+                <li><strong>Matriculation</strong> DAV Public School, Sawang (2015) - CGPA: 7.0/10.0</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container fadeInUp">
+            <h2>Skills</h2>
+            <ul>
+                <li>Python, HTML, CSS</li>
+                <li>MS Word, MS Excel</li>
+                <li>English, Hindi</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="experience">
+        <div class="container fadeInUp">
+            <h2>Work Experience/Projects</h2>
+            <ul>
+                <li><strong>Post Diploma Practical Training PDPT</strong> (2022‐23)
+                    <ul>
+                        <li>Conducted safe and effective blasting operations.</li>
+                        <li>Implemented and maintained roof support systems.</li>
+                        <li>Managed ventilation to ensure safe air quality.</li>
+                        <li>Applied stowing techniques and optimized mining methods.</li>
+                    </ul>
+                </li>
+                <li><strong>Mining Supervisor</strong> M/S PCR RI Joint Venture, Kathara Colliery Mines (C.C.L.) (2020‐21)
+                    <ul>
+                        <li>Supervised mining operations at Kathara Colliery Open Cast Project.</li>
+                        <li>Ensured adherence to safety protocols and efficient resource management.</li>
+                        <li>Demonstrated professional attitude, strong work ethic, and extensive job knowledge.</li>
+                        <li>Maintained a positive work environment, fostering teamwork and productivity.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container fadeInUp">
+            <h2>Hire Me</h2>
+            <form action="mailto:premraz1997@gmail.com" method="post" enctype="text/plain">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Prem Kumar Yadav</p>
+        </div>
+    </footer>
+
+    <!-- Integrated JavaScript for animations -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const elements = document.querySelectorAll('.fadeInUp');
+            elements.forEach((element, index) => {
+                element.style.animationDelay = `${index / 5}s`;
+                element.classList.add('fadeInUp');
+            });
+        });
+
+        const styleSheet = document.styleSheets[0];
+        styleSheet.insertRule(`
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translate3d(0, 100%, 0);
+            }
+            to {
+                opacity: 1;
+                transform: translate3d(0, 0, 0);
+            }
+        }`, styleSheet.cssRules.length);
+    </script>
+</body>
+</html>
